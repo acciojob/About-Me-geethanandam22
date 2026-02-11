@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e3f2fd, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1976d2;
+            border-bottom: 2px solid #1976d2;
+            padding-bottom: 5px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #1976d2;
+            object-fit: cover;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .skill {
+            margin: 10px 0;
+        }
+
+        .bar {
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 20px;
+            background: #1976d2;
+            text-align: right;
+            color: white;
+            padding-right: 5px;
+            line-height: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1976d2;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 15px;
+            margin: 3px;
+            font-size: 12px;
+        }
+
+        .icon {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="center">
+        <!-- Replace src with your photo path -->
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+    </div>
+
+    <h2>Name</h2>
+    <p>Nandam Geetha</p>
+
+    <h2>Email</h2>
+    <p>geethanandam22@gmail.com</p>
+
+    <h2>Profile</h2>
+    <p>Software Developer / UI-UX Designer</p>
+
+    <h2>About me</h2>
+    <p>
+        Passionate and driven software developer with a Master's degree in Computer Applications.
+        I enjoy solving real-world problems using technology and designing intuitive digital
+        experiences. Skilled in Java, Python, and UI/UX design with a strong interest in
+        frontend development and modern web technologies.
+    </p>
+
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <span class="icon">💻</span> Java
+        <div class="bar">
+            <div class="bar-fill" style="width: 85%;">85%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span class="icon">🐍</span> Python
+        <div class="bar">
+            <div class="bar-fill" style="width: 80%;">80%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span class="icon">🌐</span> HTML / CSS
+        <div class="bar">
+            <div class="bar-fill" style="width: 90%;">90%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span class="icon">🎨</span> UI / UX (Figma)
+        <div class="bar">
+            <div class="bar-fill" style="width: 88%;">88%</div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span class="icon">🗄️</span> MySQL
+        <div class="bar">
+            <div class="bar-fill" style="width: 75%;">75%</div>
+        </div>
+    </div>
+
+    <h3>Badges</h3>
+    <span class="badge">Problem Solver</span>
+    <span class="badge">Quick Learner</span>
+    <span class="badge">Team Player</span>
+    <span class="badge">Creative Thinker</span>
+
+</div>
+
+</body>
+</html>
 
