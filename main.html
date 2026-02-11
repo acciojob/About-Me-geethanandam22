@@ -1,148 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Personal Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #e3f2fd, #ffffff);
-            margin: 0;
-            padding: 0;
-        }
+<meta charset="UTF-8">
+<title>Personal Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        .container {
-            width: 80%;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.2);
-            border-radius: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #e9ecef;
+}
 
-        h2 {
-            color: #1976d2;
-            border-bottom: 2px solid #1976d2;
-            padding-bottom: 5px;
-        }
+.container {
+  width: 90%;
+  margin: 30px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  display: flex;
+  gap: 40px;
+}
 
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #1976d2;
-            object-fit: cover;
-        }
+/* LEFT SIDE */
+.left {
+  width: 35%;
+}
 
-        .center {
-            text-align: center;
-        }
+.left img {
+  width: 180px;
+  border-radius: 6px;
+  display: block;
+  margin-bottom: 20px;
+}
 
-        .skill {
-            margin: 10px 0;
-        }
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+}
 
-        .bar {
-            background: #ddd;
-            border-radius: 20px;
-            overflow: hidden;
-        }
+.info p {
+  margin: 6px 0;
+}
 
-        .bar-fill {
-            height: 20px;
-            background: #1976d2;
-            text-align: right;
-            color: white;
-            padding-right: 5px;
-            line-height: 20px;
-        }
+/* SKILLS */
+.skill {
+  margin: 15px 0;
+}
 
-        .badge {
-            display: inline-block;
-            background: #1976d2;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 15px;
-            margin: 3px;
-            font-size: 12px;
-        }
+.skill-name {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
 
-        .icon {
-            font-size: 20px;
-            margin-right: 5px;
-        }
-    </style>
+.bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: #1e6bd6;
+}
+
+/* RIGHT SIDE */
+.right {
+  width: 65%;
+}
+
+.right h2 {
+  border-bottom: 3px solid #1e6bd6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.right p {
+  line-height: 1.6;
+  color: #444;
+}
+</style>
 </head>
+
 <body>
 
 <div class="container">
 
-    <div class="center">
-        <!-- Replace src with your photo path -->
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+  <!-- LEFT PANEL -->
+  <div class="left">
+
+    <img src="profile.jpg" alt="Profile Photo">
+
+    <div class="info">
+      <div class="section-title">Name</div>
+      <p>Your Full Name</p>
+
+      <div class="section-title">Profile</div>
+      <p>Software Developer</p>
+
+      <div class="section-title">Email</div>
+      <p>yourmail@gmail.com</p>
     </div>
 
-    <h2>Name</h2>
-    <p>Nandam Geetha</p>
+    <div class="section-title">Skills</div>
 
-    <h2>Email</h2>
-    <p>geethanandam22@gmail.com</p>
+    <div class="skill">
+      <div class="skill-name"><i class="fa-brands fa-react"></i> React – 95%</div>
+      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+    </div>
 
-    <h2>Profile</h2>
-    <p>Software Developer / UI-UX Designer</p>
+    <div class="skill">
+      <div class="skill-name"><i class="fa-brands fa-js"></i> JavaScript – 90%</div>
+      <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+    </div>
 
+    <div class="skill">
+      <div class="skill-name"><i class="fa-brands fa-python"></i> Python – 85%</div>
+      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name"><i class="fa-solid fa-database"></i> MySQL – 70%</div>
+      <div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right">
     <h2>About me</h2>
     <p>
-        Passionate and driven software developer with a Master's degree in Computer Applications.
-        I enjoy solving real-world problems using technology and designing intuitive digital
-        experiences. Skilled in Java, Python, and UI/UX design with a strong interest in
-        frontend development and modern web technologies.
+      I am a passionate and self-motivated individual who loves learning new
+      technologies and solving real-world problems through coding. 
+      I enjoy building web applications and continuously improving my
+      technical and communication skills.
     </p>
 
-    <h2>Skills</h2>
-
-    <div class="skill">
-        <span class="icon">💻</span> Java
-        <div class="bar">
-            <div class="bar-fill" style="width: 85%;">85%</div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span class="icon">🐍</span> Python
-        <div class="bar">
-            <div class="bar-fill" style="width: 80%;">80%</div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span class="icon">🌐</span> HTML / CSS
-        <div class="bar">
-            <div class="bar-fill" style="width: 90%;">90%</div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span class="icon">🎨</span> UI / UX (Figma)
-        <div class="bar">
-            <div class="bar-fill" style="width: 88%;">88%</div>
-        </div>
-    </div>
-
-    <div class="skill">
-        <span class="icon">🗄️</span> MySQL
-        <div class="bar">
-            <div class="bar-fill" style="width: 75%;">75%</div>
-        </div>
-    </div>
-
-    <h3>Badges</h3>
-    <span class="badge">Problem Solver</span>
-    <span class="badge">Quick Learner</span>
-    <span class="badge">Team Player</span>
-    <span class="badge">Creative Thinker</span>
+    <p>
+      My strengths include quick learning ability, teamwork, and dedication.
+      I aim to contribute effectively to an organization while growing
+      professionally and personally.
+    </p>
+  </div>
 
 </div>
 
